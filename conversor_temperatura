@@ -1,0 +1,7 @@
+temperatura = float(input("Quantos graus Celsius está fazendo?"))
+print("a temperatura é:", temperatura, "C")
+resposta = input("voce quer que eu converta para farenheit? ")
+if resposta == "sim":
+    print(round(temperatura * 9/5 + 32, 1), "F")
+else:
+    print("beleza")
