@@ -1,0 +1,7 @@
+nome = str(input("Qual seu nome?"))
+print("ola," , nome, "!")
+casamento =str(input("voce vai ao casamento de girleide e fernando?"))
+if casamento == "sim":
+ print("esperamos por você paizao")
+else:
+   print("e o presente, vai dar mesmo assim né hahahah?")
