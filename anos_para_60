@@ -1,0 +1,3 @@
+idade = 28
+anos_para_60 = 60 - idade
+print("faltam", anos_para_60, "anos para você fazer 60")
