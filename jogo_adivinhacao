@@ -1,0 +1,20 @@
+import random
+
+numero_sorteado = random.randint(1, 10)
+if numero_sorteado % 2 == 0:
+    tipo_numero = "par"
+else:
+    tipo_numero = "impar"
+
+palpite = int(input("estou pensando em um numero de 1 a 10, qual voce acha que é? "))
+if palpite == numero_sorteado:
+    print("parabens, voce acertou!")
+else:
+    print("errou,", "Mais uma chance!")
+    palpite2 = input("par ou impar? ")
+    palpite2 = palpite2.lower()
+    if palpite2 == tipo_numero:
+        print("parabens, voce acertou!")
+    else:
+        print("errou de novo mano")
+    print("o numero sorteado foi:", numero_sorteado)
