@@ -1,0 +1,8 @@
+compra = float(input("qual o valor da compra?"))
+if compra > 100:
+    print("voce ganhou 10% de desconto")
+    novo_valor = round(compra*0.90, 2)
+    print("o novo valor é", novo_valor)
+else:
+    print("parabens pela sua compra!")
+print("obrigado pela preferencia!")
