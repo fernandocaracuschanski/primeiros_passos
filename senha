@@ -1,0 +1,6 @@
+senha = input("Qual a senha? ")
+if senha == "1234":
+    print("acesso liberado")
+    print("bem vindo")
+else:
+    print("acesso negado")
