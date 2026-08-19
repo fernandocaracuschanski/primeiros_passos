@@ -1,0 +1,10 @@
+velocidade = float(input("qual a velocidade? "))
+if velocidade > 90:
+    velocidade_extra = velocidade - 90
+    multa = velocidade_extra * 7
+    print("Você estava acima do limite de velocidade")
+    print("você estava", velocidade_extra, "km/h acima do limite da via")
+    print("sua multa é de", multa, "reais")
+else:
+    print("voce estava no limite de velocidade")
+print("tenha um bom dia!")
