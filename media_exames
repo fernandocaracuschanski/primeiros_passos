@@ -1,0 +1,5 @@
+exame1 = 25
+exame2 = 99
+exame3 = 58.7
+media = (exame1 + exame2 + exame3) / 3
+print("a média dos resultados é:", media)
