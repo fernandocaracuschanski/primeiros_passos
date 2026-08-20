@@ -1,0 +1,26 @@
+nascimento = int(input("Em que ano você nasceu? "))
+sexo = input("Você é homem ou mulher? ")
+ano_atual = 2026
+idade = ano_atual - nascimento
+
+if sexo.lower() == "mulher":
+    print("O alistamento militar obrigatório é apenas para homens.")
+else:
+    if idade > 18:
+        resposta = input("voce ja se alistou? ")
+        if resposta.lower() == "sim":
+            print("parabens, voce cumpriu com sua obrigação")
+        else:
+            anos_atraso = idade - 18
+            if anos_atraso == 1:
+                print("voce esta a", anos_atraso, "ano atrasado")
+            else:
+                print("voce esta a", anos_atraso, "anos atrasado")
+    elif idade < 18:
+        anos_faltam = 18 - idade
+        if anos_faltam == 1:
+            print("falta", anos_faltam, "ano para voce se alistar")
+        else:
+            print("faltam", anos_faltam, "anos para voce se alistar")
+    else:
+        print("parabens, esta na hora de se alistar")
