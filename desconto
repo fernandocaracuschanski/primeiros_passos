@@ -1,0 +1,13 @@
+preco_produto=float(input("qual o preço do produto?"))
+forma_pagamento=str(input("qual a forma de pagamento?")).lower()
+if forma_pagamento== "pix" or forma_pagamento== "dinheiro":
+  print("o valor a ser pago é de:", round(preco_produto*90 /100,2), "reais")
+elif forma_pagamento== "cartao de debito":
+  print("o valor a ser pago é de:", round(preco_produto*0.95,2), "reais")
+elif forma_pagamento== "cartao de credito":
+  print("o valor a ser pago é de:", round(preco_produto*1.05,2), "reais")
+elif forma_pagamento== "parcelado":
+  print("o valor a ser pago é de:", round(preco_produto*1.10,2),"reais")
+print("obrigado pela compra!")
+else:
+  print("forma de pagamento invalida")
