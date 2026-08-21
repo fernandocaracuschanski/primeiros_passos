@@ -1,0 +1,22 @@
+nascimento=int(input("em que ano voce nasceu?"))
+idade=2026-nascimento
+if idade>18:
+  carteira_motorista=str(input("voce tem carteira de motorista?"))
+  if carteira_motorista.lower()=="sim":
+    print("uau, que baita motorista")
+  else:
+    tempo_perdido=idade-18
+    if tempo_perdido==1:
+      print("voce ja pode tirar a carteira há:", tempo_perdido, "ano")
+    else:
+      print("voce ja pode tirar a carteira há:", tempo_perdido, "anos")
+elif idade==18:
+    print("vá logo tirar a sua carteira, está esperanddo o que??")
+else:
+  tempo_falta=18-idade
+  print("voce ainda não pode tirar a carteira")
+  print("voce tem", idade, "anos")
+  if tempo_falta==1:
+    print("faltam:", tempo_falta, "ano para voce tirar a carteira")
+  else:
+    print("faltam:", tempo_falta, "anos para voce tirar a carteira")
